@@ -107,7 +107,7 @@ def construct_query_and_database_sets(base_path, runs_folder, folders, pointclou
 
 
 # Building database and query files for evaluation
-base_path = "/test/dataset/benchmark_datasets/"
+base_path = "../../benchmark_datasets/"
 
 #--------------------------------------------------------------------------------------------------
 # For Oxford

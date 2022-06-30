@@ -57,7 +57,7 @@ def construct_query_dict(df_centroids, filename):
 
     print("Done ", filename)
 
-base_path = "/test/dataset/benchmark_datasets/"
+base_path = "../../benchmark_datasets/"
 runs_folder = "inhouse_datasets/"
 filename = "pointcloud_centroids_10.csv"
 pointcloud_fols = "/pointcloud_25m_10/"

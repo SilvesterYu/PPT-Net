@@ -57,7 +57,7 @@ KNN:
   - 20
   - 20
 
-DATASET_FOLDER: '/test/dataset/benchmark_datasets/'
+DATASET_FOLDER: '../benchmark_datasets/'
 
 # TRAIN
 BATCH_NUM_QUERIES: 1
@@ -83,8 +83,8 @@ BN_INIT_DECAY: 0.5
 BN_DECAY_DECAY_RATE: 0.5
 BN_DECAY_CLIP: 0.99
 
-TRAIN_FILE_ROOT: '/test/work2020/pointnetvlad/generating_queries/pickle_data'
-TEST_FILE_ROOT: '/test/work2020/pointnetvlad/generating_queries/pickle_data'
+TRAIN_FILE_ROOT: 'generating_queries/'
+TEST_FILE_ROOT: 'generating_queries/'
 
 # LOSS
 LOSS_FUNCTION: 'quadruplet'
@@ -101,8 +101,8 @@ DEGREE: 0
 
 #  ----------- switch data for evaluation ----------
 EVAL_DATASET: 'oxford'
-EVAL_DATABASE_FILE: '/test/work2020/pointnetvlad/generating_queries/pickle_data/oxford_evaluation_database.pickle'
-EVAL_QUERY_FILE: '/test/work2020/pointnetvlad/generating_queries/pickle_data/oxford_evaluation_query.pickle'
+EVAL_DATABASE_FILE: 'generating_queries/oxford_evaluation_database.pickle'
+EVAL_QUERY_FILE: 'generating_queries/oxford_evaluation_query.pickle'
 
 #EVAL_DATASET: 'residential'
 #EVAL_DATABASE_FILE: '/test/work2020/pointnetvlad/generating_queries/pickle_data/residential_evaluation_database.pickle'

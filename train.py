@@ -48,8 +48,8 @@ def get_parser():
     if cfg["DATA_TYPE"] == "baseline":
         # train_baseline = "training_queries_baseline_v1.pickle"
         # test_baseline = "test_queries_baseline_v1.pickle"
-        train_baseline = "training_queries_baseline_short.pickle"
-        test_baseline = "test_queries_baseline_short.pickle"
+        train_baseline = "training_queries_baseline_v1.pickle"
+        test_baseline = "test_queries_baseline_v1.pickle"
     elif cfg["DATA_TYPE"] == "refine":
         train_baseline = "training_queries_refine_v1.pickle"
         test_baseline = "test_queries_baseline_v1.pickle"
@@ -162,9 +162,12 @@ def main():
     init()
 
     global train_data, test_data
+
     if not args["eval"]:
         train_data = load_pc_data(TRAINING_QUERIES, train=True)
         # test_data = load_pc_data(TEST_QUERIES, train=False)
+        print("--- train.py train_data ---")
+        print(train_data)
 
     global eval_database_set, eval_query_set
     eval_database_set = load_pc_data_set(DATABASE_SETS)

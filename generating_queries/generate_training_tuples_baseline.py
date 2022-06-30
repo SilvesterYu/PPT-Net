@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from sklearn.neighbors import KDTree
 
-base_path = "/test/dataset/benchmark_datasets/"
+base_path = "../../benchmark_datasets/"
 
 runs_folder = "oxford/"
 filename = "pointcloud_locations_20m_10overlap.csv"

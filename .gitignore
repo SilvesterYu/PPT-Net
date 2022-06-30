@@ -1,0 +1,4 @@
+exp/
+generating_queries/*.pickle
+libs/
+*/__pycache__/
